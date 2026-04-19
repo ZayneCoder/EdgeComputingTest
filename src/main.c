@@ -35,7 +35,7 @@ static int get_log_path(char *path, size_t size) {
         return -1;
     }
 
-    int written = snprintf(path, size, "%s/output/logs/app.log", dir);
+    int written = snprintf(path, size, "%s/logs/app.log", dir);
     return written < 0 || (size_t)written >= size ? -1 : 0;
 }
 
